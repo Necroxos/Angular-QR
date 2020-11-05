@@ -1,0 +1,10 @@
+<div class="m-2 text-center">
+    <hr>
+    <h1> Generador de QR </h1>
+    <hr>
+    <input class="form-control mr-sm-2" type="text" (keyup)="changeQRVal(numeroSerie.value)" placeholder="Nº de Serie" #numeroSerie>
+
+</div>
+<div class="m-4 text-center">
+    <qrcode [qrdata]="QrValue" [width]="Width" [errorCorrectionLevel]="'M'"></qrcode>
+</div>
