@@ -1,6 +1,9 @@
 # AngularQrscanner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.
+
+## Dependences
+Run `npm install` before run the proyect.
 
 ## Development server
 
