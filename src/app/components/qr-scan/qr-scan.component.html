@@ -2,13 +2,16 @@
 
     <!-- Selección de dispositivo de video -->
     <div class="input-group mb-3">
+
         <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">Escoga una cámara</label>
         </div>
+
         <select class="custom-select" (change)="changeDevice($event.target.value)">
-			<option>Seleccione un dispositivo de video...</option>
-			<option *ngFor="let device of videoDevices">{{ device.label }}</option>
-		</select>
+          <option>Seleccione un dispositivo de video...</option>
+          <option *ngFor="let device of videoDevices">{{ device.label }}</option>
+        </select>
+
     </div>
 
     <!-- Terminal -->
@@ -32,9 +35,9 @@
         <pre *ngSwitchCase="'build'">ng build --prod</pre>
     </div>
 
-    <!-- Mensaje -->
-    <div *ngIf="scanned" class="alert alert-success mt-3" role="alert">
-        El valor del código es: {{ valueQR }}
-    </div>
+</div>
 
+<!-- Mensaje -->
+<div *ngIf="scanned" class="alert alert-success mt-3" role="alert">
+    El valor del código es: {{ valueQR }}
 </div>
